@@ -30,15 +30,15 @@ All models were benchmarked on an 80/20 train-test split, with predictions conve
 
 | Model | MAE ($) | RMSE ($) | $R^2$ Score | Key Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Linear Regression (Baseline)** | $9,188.46 | $13,408.79 | 0.6584 | Baseline linear benchmark |
-| **Random Forest (Tuned)** | $2,640.37 | $5,151.27 | 0.9496 | Tuned bagging ensemble |
-| **HistGradientBoosting (Tuned)** | $2,664.47 | $5,018.90 | 0.9521 | Tuned gradient boosting |
-| **Ensemble (RF + HGB)** | **$2,585.22** | **$4,943.71** | **0.9536** | **Champion Model (Voting Regressor)** |
+| **Linear Regression (Baseline)** | $9,303.23 | $13,530.35 | 0.6522 | Baseline linear benchmark |
+| **Random Forest (Tuned)** | $2,637.08 | $5,159.32 | 0.9494 | Tuned bagging ensemble |
+| **HistGradientBoosting (Tuned)** | $2,661.75 | $5,008.33 | 0.9523 | Tuned gradient boosting |
+| **Ensemble (RF + HGB)** | **$2,582.85	** | **$4,947.44** | **0.9535** | **Champion Model (Voting Regressor)** |
 
 ---
 
 ## Key Takeaways
-1. **Ensemble Performance:** The Voting Regressor combined Random Forest and HistGradientBoosting to achieve peak generalization, reaching **$R^2 = 0.9536$** and reducing MAE to **$2,585.22$** (71.9% error reduction over baseline).
+1. **Ensemble Performance:** The Voting Regressor combined Random Forest and HistGradientBoosting to achieve peak generalization, reaching **$R^2 = 0.9535$** and reducing MAE to **$2,582.85$** (71.9% error reduction over baseline).
 2. **Data Leak-Proofing:** Combining transformation steps within Scikit-Learn pipelines guaranteed unbiased evaluation between training and test sets.
 3. **Artifact Serialization:** The final champion estimator and its preprocessing workflow were serialized into `car_price_ensemble_model.joblib` for production inference.
 
