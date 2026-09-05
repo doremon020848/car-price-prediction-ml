@@ -33,7 +33,7 @@ All models were benchmarked on an 80/20 train-test split, with predictions conve
 | **Linear Regression (Baseline)** | $9,303.23 | $13,530.35 | 0.6522 | Baseline linear benchmark |
 | **Random Forest (Tuned)** | $2,637.08 | $5,159.32 | 0.9494 | Tuned bagging ensemble |
 | **HistGradientBoosting (Tuned)** | $2,661.75 | $5,008.33 | 0.9523 | Tuned gradient boosting |
-| **Ensemble (RF + HGB)** | **$2,582.85	** | **$4,947.44** | **0.9535** | **Champion Model (Voting Regressor)** |
+| **Ensemble (RF + HGB)** | **$2,582.85** | **$4,947.44** | **0.9535** | **Champion Model (Voting Regressor)** |
 
 ---
 
